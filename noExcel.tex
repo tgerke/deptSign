@@ -1,0 +1,53 @@
+\documentclass{article}
+\pagenumbering{gobble}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{pagecolor,lipsum}
+
+% define the color common to lost time accident signs
+\definecolor{ltagreen}{RGB}{52,120,86}
+
+\usepackage[most]{tcolorbox}
+
+% set white as the global font color
+\color{white}
+
+% set Fira Sans as default font
+\usepackage[sfdefault]{FiraSans}
+
+\begin{document}
+\pagecolor{ltagreen}
+
+\begin{center}
+
+\fontsize{50}{50}
+\firamedium
+\textsc
+THIS DEPARTMENT\\
+HAS WORKED\\
+\vspace{.5cm}
+\begin{tcolorbox}[enhanced jigsaw, colback=white, boxrule=0pt, arc=4pt, width=.3\linewidth, height=2cm, nobeforeafter]
+\end{tcolorbox}
+{\fontsize{80}{50}\selectfont DAYS}\\
+WITHOUT\\
+OPENING EXCEL\\
+
+\vspace{-.3cm}
+\begin{tcolorbox}[enhanced jigsaw, colback=white, boxrule=0pt, arc=0pt, width=.85\linewidth, height=.5cm]
+\end{tcolorbox}
+\vspace{.5cm}
+
+BEST PREVIOUS\\
+RECORD WAS\\
+\vspace{.5cm}
+\begin{tcolorbox}[enhanced jigsaw, colback=white, boxrule=0pt, arc=4pt, width=.3\linewidth, height=2cm, nobeforeafter]
+\end{tcolorbox}
+{\fontsize{80}{50}\selectfont DAYS}\\
+%\vspace{.2cm}
+{\fontsize{30}{50}\selectfont \emph{DO YOUR PART\\
+\vspace{-.4cm}
+HELP MAKE A NEW RECORD}}\\
+
+\end{center}
+
+\end{document}
